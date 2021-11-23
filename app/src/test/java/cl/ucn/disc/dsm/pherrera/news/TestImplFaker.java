@@ -10,16 +10,25 @@
 
 package cl.ucn.disc.dsm.pherrera.news;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.List;
 
-/**
- * The Contracts of The News Project
- *@author pablo
- */
-public interface Contracts {
-    /**
-     *
-     * @return all the News in the backend ordered by PublishedAt
-     */
-    List<News> retrieveNews(int size);
+public class TestImplFaker {
+
+    @Test
+    public void testConstructor(){
+
+    }
+    @Test
+    public void testRetrieveNews(){
+
+        final Contracts contracts = new ContractsImplFaker();
+        Assertions.assertNotNull(contracts, "Contracts was null");
+        final int N = 10;
+        final List<News> listNews = contracts.retrieveNews(N);
+        Assertions.assertNotNull(listNews, "ListNews was nulll");
+        Assertions.assertEquals(N, listNews.size(), "Wrong number of elements");
+    }
 }
