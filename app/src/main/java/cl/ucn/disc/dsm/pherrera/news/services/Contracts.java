@@ -8,27 +8,20 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package cl.ucn.disc.dsm.pherrera.news;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+package cl.ucn.disc.dsm.pherrera.news.services;
 
 import java.util.List;
 
-public class TestImplFaker {
+import cl.ucn.disc.dsm.pherrera.news.model.News;
 
-    @Test
-    public void testConstructor(){
-
-    }
-    @Test
-    public void testRetrieveNews(){
-
-        final Contracts contracts = new ContractsImplFaker();
-        Assertions.assertNotNull(contracts, "Contracts was null");
-        final int N = 10;
-        final List<News> listNews = contracts.retrieveNews(N);
-        Assertions.assertNotNull(listNews, "ListNews was nulll");
-        Assertions.assertEquals(N, listNews.size(), "Wrong number of elements");
-    }
+/**
+ * The Contracts of The News Project
+ *@author pablo
+ */
+public interface Contracts {
+    /**
+     *
+     * @return all the News in the backend ordered by PublishedAt
+     */
+    List<News> retrieveNews(int size);
 }

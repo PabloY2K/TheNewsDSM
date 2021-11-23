@@ -5,6 +5,7 @@ Android Project to show a list of News.
 
 ```puml
 @startuml
+package externals* #ffcccc{
 package org.threeten.bp {
     class ZonedDateTime {
             ...
@@ -24,6 +25,7 @@ package org.threeten.bp {
      }
    
    }
+   
     
     
 
