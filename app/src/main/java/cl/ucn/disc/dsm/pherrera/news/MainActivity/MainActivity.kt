@@ -14,8 +14,8 @@ class MainActivity {
     import android.os.Bundle
     import androidx.appcompat.app.AppCompatActivity
     import androidx.recyclerview.widget.DividerItemDecoration
-    import cl.ucn.disc.dsm.pjopia.databinding.ActivityMainBinding
-    import cl.ucn.disc.dsm.pjopia.model.News
+    import cl.ucn.disc.dsm.pherrera.databinding.ActivityMainBinding
+    import cl.ucn.disc.dsm.pherrera.model.News
     import org.slf4j.LoggerFactory
 
     public final class MainActivity : AppCompatActivity() {
