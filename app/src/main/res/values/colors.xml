@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="ToolbarTitleTextColor">@color/lightgreen_200</color>
+    <color name="ToolbarBackground">@color/lightgreen_500</color>
+    <color name="ToolbarSubtitleTextColor">@color/lightgreen_200</color>
+
+    <color name="textColorPrimary">@color/lightgreen_900</color>
+    <color name="textColorSecondary">@color/lightgreen_800</color>
+    <color name="textColorTerciary">@color/lightgreen_700</color>
+
+
+
 </resources>

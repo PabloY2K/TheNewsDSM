@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TheNews" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Newsproject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,4 +13,33 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name= "TextLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name= "TextMedium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name= "TextSmall" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/textColorTerciary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+
+    </style>
+
+
+    <style name="Theme.Toolbar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/ToolbarBackground</item>
+        <item name="titleTextColor">@color/ToolbarTitleTextColor</item>
+        <item name="subtitleTextColor">@color/ToolbarSubtitleTextColor</item>
+
+    </style>
+
 </resources>
