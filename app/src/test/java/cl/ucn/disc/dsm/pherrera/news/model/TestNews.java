@@ -78,7 +78,7 @@ public final class TestNews {
                     null,
                     "URL de la noticia",
                     "El URL de la imagen de la noticia",
-                    "La descripcion de la noticia", "El contenido de la noticia",
+                    "La descripcion de la noticia", m"El contenido de la noticia",
                     org.threeten.bp.ZonedDateTime.now(org.threeten.bp.ZoneId.of("-4j"))
             ));
 
