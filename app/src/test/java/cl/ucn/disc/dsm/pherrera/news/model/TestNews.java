@@ -88,6 +88,6 @@ public final class TestNews {
     }
 
     //Assertions.fail("The testing has failed");
-    //This is the end of TestNews
+    //This is the end of TestNews.
 
 }
